@@ -1,8 +1,7 @@
 // import { createElement } from "react";
 import "./index.css";
 import { createRoot } from "react-dom/client";
-import App from "./App";
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { RouterProvider } from "react-router-dom";
 import router from "./routes/router";
 
 const root = document.querySelector("#root");

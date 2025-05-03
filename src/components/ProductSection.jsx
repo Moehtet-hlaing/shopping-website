@@ -1,4 +1,3 @@
-import React from "react";
 import ProductCard from "./ProductCard";
 import Container from './Container';
 import useProductStore from "../store/useProductStore";

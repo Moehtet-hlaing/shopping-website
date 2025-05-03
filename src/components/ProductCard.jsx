@@ -1,6 +1,5 @@
-import React from "react";
 import Rating from "./rating";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import useCartStore from "../store/useCartStore";
 import toast from "react-hot-toast";
 

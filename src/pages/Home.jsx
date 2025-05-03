@@ -1,4 +1,3 @@
-import React from 'react'
 import CategorySection from '../components/CategorySection';
 import ProductSection from '../components/ProductSection';
 

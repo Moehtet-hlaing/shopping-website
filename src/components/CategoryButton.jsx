@@ -1,4 +1,3 @@
-import React from "react";
 import useCategoryStore from "../store/useCategoryStore";
 const CategoryButton = ({category:{id,name,isActive}}) => {
   const {activeCategory} = useCategoryStore();

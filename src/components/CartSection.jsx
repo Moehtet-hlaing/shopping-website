@@ -1,5 +1,3 @@
-import React from "react";
-import products from "../data/products";
 import Cart from "./Cart";
 import Container from "./Container";
 import { Link } from "react-router-dom";

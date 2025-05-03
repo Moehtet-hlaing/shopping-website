@@ -1,4 +1,3 @@
-import React from 'react'
 import CategoryButton from './CategoryButton';
 import Container from './Container';
 import useCategoryStore from '../store/useCategoryStore';
