@@ -1,7 +1,7 @@
-import Rating from "./rating";
 import { useNavigate } from "react-router-dom";
 import useCartStore from "../store/useCartStore";
 import toast from "react-hot-toast";
+import Rating from "./Rating";
 
 const ProductCard = ({
   product: {
