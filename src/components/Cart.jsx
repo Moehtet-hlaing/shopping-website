@@ -21,24 +21,24 @@ const Cart = ({cart:{id,productId,quantity}}) => {
   }
 
   return (
-    <div className=" border border-black p-5 grid grid-cols-6">
+    <div className=" border border-black px-2 py-4 md:p-5 grid grid-cols-7 md:grid-cols-6">
       <div className="col-span-1">
-        <img src={product.image} className=' h-16' alt="" />
+        <img src={product.image} className=' h-12 md:h-16' alt="" />
       </div>
-      <div className="col-span-3">
-        <p className='mb-4'>{product.title}</p>
-        <p className='text-gray-600 '>{product.price}</p>
+      <div className=" col-span-4 md:col-span-3 flex flex-col gap-2">
+        <p className='text-xs md:text-base font-medium'>{product.title}</p>
+        <p className='text-gray-600 text-xs md:text-base'>{product.price}</p>
       </div>
       <div className="col-span-1">
-      <p className=" mb-2">Quantity</p>
-        <div className=" flex gap-3">
-          <button onClick={handleDecreaseQuantity} className=" bg-black text-white px-2 py-0.5">-</button>
+      <p className=" mb-2 text-xs md:text-base">Quantity</p>
+        <div className=" flex gap-1 md:gap-3 text-xs md:text-base">
+          <button onClick={handleDecreaseQuantity} className=" bg-black text-white px-1.5 md:px-2 py-0.5">-</button>
           {quantity}
-          <button onClick={handleIncreaseQuantity} className=" bg-black text-white px-2 py-0.5">+</button>
+          <button onClick={handleIncreaseQuantity} className=" bg-black text-white px-1.5 md:px-2 py-0.5">+</button>
         </div>
       </div>
-      <div className="col-span-1">
-        <p className='text-end text-xl font-bold'>{cost.toFixed(2)}</p>
+      <div className="col-span-1 flex justify-end items-center">
+        <p className='text-end text-sm md:text-xl font-bold'>{cost.toFixed(2)}</p>
       </div>
     </div>
     

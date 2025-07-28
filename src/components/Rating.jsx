@@ -14,7 +14,7 @@ const Rating = ({rate}) => {
         viewBox="0 0 24 24"
         strokeWidth={1.5}
         stroke="currentColor"
-        className={`size-6 stroke-yellow-500 ${num <= currentRate && "fill-yellow-500"}`}
+        className={` size-5 md:size-6 stroke-yellow-500 ${num <= currentRate && "fill-yellow-500"}`}
       >
         <path
           strokeLinecap="round"

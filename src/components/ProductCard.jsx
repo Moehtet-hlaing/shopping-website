@@ -36,17 +36,17 @@ const ProductCard = ({
     onClick={handleOpenDetail}
       className="border border-black p-5 flex flex-col items-start gap-5"
     >
-      <img src={image} className="h-40 " alt="" />
-      <p className="font-bold line-clamp-2">{title}</p>
+      <img src={image} className="h-32 md:h-40 " alt="" />
+      <p className="font-bold line-clamp-2 text-sm md:text-base">{title}</p>
       <Rating rate={rate} />
       <div className=" flex justify-between items-end w-full ">
-        <p>{price}</p>
+        <p className="text-sm md:text-base">{price}</p>
         {carts.find((cart) => cart.productId === id) ? (
-          <button onClick={handleAddedBtn} className=" text-sm border border-black bg-black text-white px-3 py-1">
+          <button onClick={handleAddedBtn} className=" text-xs md:text-sm border border-black bg-black text-white px-3 py-1">
             Added
           </button>
         ) : (
-          <button onClick={handleAddCartBtn} className=" text-sm border border-black px-3 py-1">
+          <button onClick={handleAddCartBtn} className=" text-xs md:text-sm border border-black px-3 py-1">
             Add Cart
           </button>
         )}
